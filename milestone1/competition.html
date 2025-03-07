@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Website Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(var(--angle, 90deg), var(--color1, #ADD8E6), var(--color2, #FADADD));
+        }
+        header, nav, main, footer {
+            width: 50%;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const randomColor = () => `hsl(${Math.random() * 360}, 100%, 85%)`;
+            const randomAngle = () => `${Math.floor(Math.random() * (135 - 45 + 1) + 45)}deg`;
+            document.documentElement.style.setProperty('--color1', randomColor());
+            document.documentElement.style.setProperty('--color2', randomColor());
+            document.documentElement.style.setProperty('--angle', randomAngle());
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Milestone 1</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>&nbsp;
+        <a href="competition.html">Competition</a>&nbsp;
+        <a href="audience.html">Audience</a>&nbsp;
+    </nav>
+
+        <main>
+            <h2>Website Summary:</h2>
+        
+            <h4><u><a href="https://www.indeed.com">Indeed</a></u></h4>
+            <p>
+                Indeed is one of the largest job search platforms, offering millions of listings, company reviews, and salary insights. It provides an easy-to-use interface and a robust filtering system to help job seekers find relevant positions efficiently.
+            </p>
+            <p>
+                However, job postings can sometimes be outdated or duplicated, and the sheer volume of listings can make it difficult to identify high-quality opportunities. Improved job verification and better employer transparency could enhance the user experience.
+            </p>
+        
+            <h4><u><a href="https://www.linkedin.com/jobs">LinkedIn Jobs</a></u></h4>
+            <p>
+                LinkedIn Jobs integrates professional networking with job searching, allowing users to connect with recruiters, receive personalized recommendations, and showcase their skills through their profiles.
+            </p>
+            <p>
+                Despite its advantages, LinkedIn Jobs tends to favor premium users with better visibility, making it harder for free users to stand out. Additionally, job postings can sometimes lack clarity on application processes or salary details.
+            </p>
+        
+            <h4><u><a href="https://www.glassdoor.com">Glassdoor</a></u></h4>
+            <p>
+                Glassdoor is well known for its in-depth company reviews, salary reports, and interview insights, helping job seekers make informed decisions before applying.
+            </p>
+            <p>
+                A downside is that some reviews may be biased or manipulated, and salary estimates aren't always accurate. More stringent review verification and clearer salary data could improve its reliability.
+            </p>
+        
+            <h4><u><a href="https://www.ziprecruiter.com">ZipRecruiter</a></u></h4>
+            <p>
+                ZipRecruiter stands out with its AI-driven job matching, sending applications to employers on behalf of job seekers and providing real-time updates on their status.
+            </p>
+            <p>
+                However, job seekers may receive too many irrelevant job suggestions, and the platform sometimes lacks transparency about job postings and employers. More refined matching algorithms could enhance accuracy.
+            </p>
+        </main>
+    
+        <footer>
+            <h6>Copyright &copy; 2025</h6>
+        </footer>
+    </body>
+    
+    </html>
